@@ -1,0 +1,163 @@
+html {
+    background-color: black;
+}
+
+#splash {
+    background-color: black;
+}
+
+.contentContainer {
+    width: 92%;
+    max-width: 600px;
+    padding: 0 4%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+}
+
+html{
+    background-color: #000;
+}
+
+body { 
+    margin-left:auto; 
+    margin-right: auto;
+    max-width: 600px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contentContainer {
+    margin: 0 auto;
+    height: 100%
+}
+
+.contentContainer p {
+    color: white;
+    text-shadow: none;
+}
+
+
+
+.logo {
+    height: 5%;
+    display: block;
+    width: 100%;
+    margin: 1.5em auto;
+}
+
+.button {
+    width: 100%;
+    padding: 0.1em;
+    margin: 5% auto;
+    background-color: #0071BC;
+    border-radius: 0.5em;
+}
+
+.button h2 {
+    color: white;
+    text-shadow: none;
+}
+
+.menu_btn {
+    float: left;
+    width: 32.5%;
+    margin: 0 0px 10px 0px;
+    padding: 0px;
+    background-color: #0071BC;
+    border-style: solid;
+    border-width: 1%;
+    border-color: #0051AC;
+}
+
+.centredText p{
+    text-align: center;
+}
+
+#selectionPane{
+    width: 100%;
+    height: 90%;
+    background-color: black; 
+}
+
+#selectionPane p {
+    color: black;
+    text-align: center;
+}
+
+#data{
+    width: 100%;
+    height: 40%;
+    background-color: black;   
+}
+
+#mapContainer{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#map-canvas{
+    height: 100%;
+    background-color: #BBB;
+}
+
+#infoContainer{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+#picContainer {
+    height: 100%;
+}
+
+#buildingName{
+    text-align: center;
+}
+
+#poiContainer{
+    height: 70%;
+    background-color: blue;
+}
+
+#dataHeader {
+    height: 6%;
+}
+
+.buttonStyle{
+    width: 80%;
+    margin: auto;
+/*    align-content: center;*/
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}

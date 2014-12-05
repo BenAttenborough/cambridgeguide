@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0 ,user-scalable=no">
+
+            <link rel="stylesheet" href="css/normalize.css"/>
+
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+            <link rel="stylesheet" href="css/myStyles.css"/>
+
+
+        <title>Cambridge Guide</title>
+ 
+    </head>
+<body>
+
+    <div id="main_container">
+
+        <div data-role="page" id="splash">
+            <div class="contentContainer">
+                <img class="logo" src="img/logo.svg">
+                <img class="logo" src="img/splash.jpg">
+                <p>A guide to tourist sights around Cambridge which can give you the location and suggest nearby places. Show info about the locations, prices, opening hours and links to external sites</p>
+                <div class="button"><a href="#home" data-transition="slide">
+                    <h2>BEGIN</h2>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="page" id="home" style="overflow:hidden;">
+            <div class="contentContainer">
+            <div class="centredText">
+            <p>Select a point of interest</p>
+            </div>
+                <div id="selectionPane" style="overflow:auto">
+                    <a href="#data" id="Overview" class="ui-btn buttonStyle" data-transition="slide"><p>Overview</p></a>
+                    <a href="#data" id="Kings" class="ui-btn buttonStyle" data-transition="slide"><p>Kings College</p></a>
+                    <a href="#data" id="Round" class="ui-btn buttonStyle" data-transition="slide"><p>The Round Church</p></a>
+                    <a href="#data" id="Market" class="ui-btn buttonStyle" data-transition="slide"><p>Cambridge Market</p></a>
+                    <a href="#data" id="Trinity" class="ui-btn buttonStyle" data-transition="slide"><p>Trinity College</p></a>
+                    <a href="#data" id="StJohn" class="ui-btn buttonStyle" data-transition="slide"><p>St John's</p></a>
+                    <a href="#data"  id="Queens" class="ui-btn buttonStyle" data-transition="slide"><p>Queen's College</p></a>
+                    <a href="#data" id="Fitz" class="ui-btn buttonStyle" data-transition="slide"><p>Fitzwilliam Museum</p></a>
+                    <a href="#data" id="Folk" class="ui-btn buttonStyle" data-transition="slide"><p>Cambridge Folk Museum</p></a>
+                    <a href="#data" id="Botanic" class="ui-btn buttonStyle" data-transition="slide"><p>Botanic Gardens</p></a>
+                    <a href="#data"  id="Kettles" class="ui-btn buttonStyle" data-transition="slide"><p>Kettles Yard</p></a>
+                    <a href="#data" id="Tech" class="ui-btn buttonStyle" data-transition="slide"><p>The Museum of Technology</p></a>
+                    <a href="#data" id="Arch" class="ui-btn buttonStyle" data-transition="slide"><p>Museum of Archaeology</p></a>
+    <BR>&nbsp;<BR>
+    <BR>&nbsp;<BR>
+                </div>
+        </div>
+        </div>
+
+        <div data-role="page" id="data">
+            <div id="dataHeader" data-role="header" data-position="fixed">
+                <div data-role="navbar" data-fullscreen="true">
+                    <ul>
+                                                                    <li><a href="#" id="infoBtn" data-icon="info" class="ui-btn-active">Info</a></li>
+                        <li><a href="#" id="mapBtn" data-icon="location">Map</a></li>
+                        <li><a href="#" id="picsBtn" data-icon="eye">Pics</a></li>
+                    </ul>
+                    <p id="buildingName" class="ui-btn-mini"></p>
+                </div><!-- /navbar -->
+            </div>
+            <div id="mapContainer">
+                <div id="map-canvas"></div>
+                <div id="infoContainer" style="overflow:auto">
+                    <p>Please select a point of interest from the main menu</p>
+                </div>
+                <div id="picContainer"></div>
+            </div>
+            <div id="footer" data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-fullscreen="true">
+                    <ul>
+                        <li><a href="#home" id="poiFooter" data-icon="action" data-transition="slide" data-direction="reverse">Select new point of interest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/infotext.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="js/infotext.js"></script>
+<script src="js/ControlScript.js"></script>
+</html>

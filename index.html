@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head >        
+    
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/phoneStyles.css" />
+    
+ 
+
+</head>
+
+<body>
+<div id="screenContainer">
+
+<div id="btnContainer">
+    <div>
+        <a href="http://create.adobegeneration.com/badges/badge.php?hash=c5048dfd9e22778ed6b2f4c0f2b5349787da3897">
+        <img src="img/CourseWinner.png">
+        </a>
+        <p>Overall winner of Adobe Generation 2014 App Design course</p>
+    </div>
+    <div data-role="collapsible">
+    <h4>Devices</h4>
+    <ul data-role="listview">
+        <li><a href="#" onclick="device='iPhone'; orientation='V'; changeDevice()">iPhone (V)</a></li>
+        <li><a href="#" onclick="device='iPhone'; orientation='H'; changeDevice()">iPhone (H)</a></li>
+        <li><a href="#" onclick="device='iPad'; changeDevice()">iPad</a></li>
+    </ul>
+        </div>
+
+    <div data-role="collapsible">
+    <h4>Tools</h4>
+    <ul data-role="listview">
+        <li><a href="#" onclick="location.reload()">Reset app</a></li>
+    </ul>
+        </div>
+
+</div>
+<div id="MainContentsBox" class="clearfix">
+    <div id="phoneimage">
+        <img src="img/iPhone/iphone5.png">
+    </div>
+    <div id="phoneMain" class="clearfix">
+    <iframe id="iframeContainer" src="main.html" name="iframe_a"></iframe>
+        
+    </div>
+</div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/phoneScript.js">
+</script>
+</html>
